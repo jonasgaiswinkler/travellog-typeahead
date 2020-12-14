@@ -28,10 +28,12 @@
         :aria-label="(!ariaLabelledBy) ? placeholder : false"
         :value="inputValue"
         :disabled="disabled"
-        @focus="isFocused = true"
+        data-keyboard="false"
+        @focus="handleFocus"
         @blur="handleFocusOut"
         @input="handleInput($event.target.value)"
-        @keydown.esc="handleEsc($event.target.value)"
+        @search="handleSearch($event.target.value)"
+        @keyup.esc="handleEsc($event.target.value)"        
         @keyup="$emit('keyup', $event)"
       />
       <div v-if="$slots.append || append" class="input-group-append">
@@ -211,6 +213,11 @@ export default {
       }
     },
 
+    handleFocus() {
+      this.isFocused = true
+      this.$emit('focus')
+    },
+
     handleChildBlur() {
       this.$refs.input.focus()
       this.isFocused = false
@@ -221,6 +228,7 @@ export default {
         return
       }
       this.isFocused = false
+      this.$emit('focusout')
     },
 
     handleFocusOut(evt) {
@@ -230,6 +238,10 @@ export default {
       } else {
         this.runFocusOut(tgt)
       }
+    },
+
+    handleSearch(newValue) {
+      this.$emit('search', newValue);
     },
 
     handleInput(newValue) {
