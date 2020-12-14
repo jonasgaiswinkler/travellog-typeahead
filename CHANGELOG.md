@@ -1,3 +1,9 @@
+## 1.0.1 - 14.12.2020
+- Change package name
+
+## 1.0.0 - 14.12.2020
+- Initial commit
+
 ## 2.5.4 - 11 Nov 2020
 - Reduced package size
 

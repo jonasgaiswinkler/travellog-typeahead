@@ -22,7 +22,7 @@
   "main": "src/components/VueTypeaheadBootstrap.vue",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name VueTypeaheadBootstrap src/components/VueTypeaheadBootstrap.vue",
+    "build": "vue-cli-service build --target lib --name travellog-typeahead src/components/VueTypeaheadBootstrap.vue",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "./deploy.sh",
