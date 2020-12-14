@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: process.env.NODE_ENV === 'production' ? 'travellog-typeahead/' : '/'
+  baseUrl: process.env.NODE_ENV === 'production' ? 'tl-typeahead/' : '/'
 }

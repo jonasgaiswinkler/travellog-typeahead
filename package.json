@@ -1,6 +1,6 @@
 {
   "name": "travellog-typeahead",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "private": false,
   "description": "A typeahead/autocomplete component for Vue 2 using Bootstrap 4",
   "keywords": [
@@ -22,7 +22,7 @@
   "main": "src/components/VueTypeaheadBootstrap.vue",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --target lib --name travellog-typeahead src/components/VueTypeaheadBootstrap.vue",
+    "build": "vue-cli-service build --target lib --name tlTypeahead src/components/VueTypeaheadBootstrap.vue",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "docs:deploy": "./deploy.sh",
