@@ -15,7 +15,7 @@
       <input
         ref="input"
         :id="`typeahead-input-${id}`"
-        type="text"
+        type="search"
         role="searchbox"
         :class="`form-control ${inputClass}`"
         :aria-labelledby="ariaLabelledBy"
